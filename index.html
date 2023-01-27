@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stamp Draw</title>
+</head>
+
+<body>
+    <div id="editor">
+        <div id="editor-title">Draw your stamp here</div>
+        <div>
+            <canvas id="stamp-canvas"></canvas>
+            <!-- 
+            <div class="color-bar">
+                <button style="background-color: blue" onclick="color='blue';"></button>
+                <button style="background-color: green" onclick="color='green';"></button>
+                <button style="background-color: yellow" onclick="color='yellow';"></button>
+                <button style="background-color: red" onclick="color='red';"></button>
+                <button style="background-color: purple" onclick="color='purple';"></button>
+            </div> -->
+            <div id="colors"></div>
+            <button onclick="cc(stampContext);" style="
+                        margin: 5px;
+                        border: solid black 1pt;
+                        border-radius: 5px;
+                    ">
+                    Clear
+                </button>
+        </div>
+    </div>
+    <canvas id="main-canvas"></canvas>
+    <canvas id="offscreen-canvas"></canvas>
+</body>
+
+<script src="main.js"></script>
+
+</html>

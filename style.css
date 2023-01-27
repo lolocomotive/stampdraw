@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Lato, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#editor {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background: white;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: 0 0 2em #0003;
+}
+
+#stamp-canvas {
+    border-radius: 4px;
+    border: solid black 2pt;
+}
+
+#offscreen-canvas {
+    display: none;
+}
+
+#editor-title {
+    margin: 0.5em;
+}
+
+#colors {
+    margin-left: 3px;
+    margin-top: 0.5em;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+button {
+    display: block;
+    background: none;
+    min-width: 2em;
+    min-height: 2em;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(1.3);
+    outline: solid black 1pt;
+    z-index: 100;
+}
